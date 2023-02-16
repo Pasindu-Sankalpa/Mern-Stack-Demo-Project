@@ -8,9 +8,9 @@ MERN Stack stands for MongoDB, Express, React, Node.js and this combined stack i
 
 This project followes the youtube tutorial at <https://youtube.com/playlist?list=PLvfC6i-hEZBnqqF7giszuYI0iqenU5NY0>
 
-"mernCrud_v1" folder contains project files upto playlist video part 4
+"mernCrud_v1" folder contains project files upto playlist video part 4.
 <br/>
-"mernCrud_v2" folder contains final project files
+"mernCrud_v2" folder contains final project files.
 
 ## Features
 - Post model has a topic,decription and a category.
