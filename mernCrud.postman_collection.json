@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "15ef0c6a-a7d4-4a1c-baeb-fcf7ae2b0f71",
+		"name": "mernCrud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save a post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\":\"React\",\r\n    \"description\":\"A post about React\",\r\n    \"postCategory\":\"Front End Dev\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/post/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\":\"MERN\",\r\n    \"description\":\"A post about MERN\",\r\n    \"postCategory\":\"Web Dev\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/post/update/63ece1d6b6222838bf33f28b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post",
+						"update",
+						"63ece1d6b6222838bf33f28b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/post/delete/63edd0f1f12f00123fc10df8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post",
+						"delete",
+						"63edd0f1f12f00123fc10df8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/post/63ecb7e5948abc5cd5ccc726",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post",
+						"63ecb7e5948abc5cd5ccc726"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

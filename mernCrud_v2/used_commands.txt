@@ -1,0 +1,17 @@
+mkdir mernCrud
+cd mernCrud
+npm init -y
+npm i express nodemon cors mongoose body-parser concurrently
+node server.js
+npm run server
+
+mongodb atlas database access user: twg, pw=twg123
+npx create-react-app client
+cd client
+npm i react-router-dom
+npm start
+
+//After adding proxy, delete package-lock.json file and create again it again using,
+npm i --package-lock-only
+
+npm run dev
